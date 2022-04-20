@@ -19,6 +19,6 @@ urlpatterns = [
         CreateSubCommentAPIView.as_view(),
     ),
     path(
-        "v1/comments/<int:pk>/", GetSubCommentAPIView.as_view(), name="subcomments"
+        "v1/comments/<int:pk>/", GetSubCommentAPIView.as_view(), name="comments"
     ),
 ]
