@@ -2,16 +2,13 @@ from django.db import models
 
 
 class DateMixin(models.Model):
-    """Миксин добавления дат:
-    создания экземпляра,
-    обновления экземпляра."""
+    """Миксин добавления даты создания экземпляра"""
 
     created_at = models.DateTimeField(verbose_name="Дата создания", auto_now_add=True)
-    updated_at = models.DateTimeField(verbose_name="Дата обновления", auto_now=True)
 
     class Meta:
         abstract = True
-        ordering = ["-updated_at"]
+        ordering = ["-created_at"]
 
 
 class Article(DateMixin):
