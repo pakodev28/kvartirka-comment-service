@@ -9,7 +9,7 @@
     cd kvartirka-comment-service
     ```
     ```
-    copy .env.example .env
+    cp .env.example .env
     ```
 2. для запуска контейнеров:
     ```
@@ -41,6 +41,12 @@
     ```
     ```
     source venv/bin/activate
+    ```
+    ```
+    pip install --upgrade pip
+    ```
+    ```
+    pip install -r requirements.txt
     ```
 2. Далее выполните следующие команды:
     ```
